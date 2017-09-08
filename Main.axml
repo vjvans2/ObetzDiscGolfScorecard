@@ -1,0 +1,773 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minWidth="25px"
+    android:minHeight="25px">
+<!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<!--///////////////////////////////////////////////////////////Front Nine/////////////////////////////////////////////////////////////////////////////////////////-->
+<!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<!--Name Label and Textbox
+    <TableRow>
+        <TextView
+            android:text="Name:"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtLabelName"
+            android:paddingRight="8dp" />
+    
+        <EditText
+            android:text="name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtInsertName"
+            android:paddingRight="8dp" />
+    </TableRow>-->
+<!--Name/Front Nine Divider Bar-->
+    <View
+        android:layout_height="2dip"
+        android:background="#FF909090" />
+    <Button
+        android:text="Recalculate"
+        android:layout_width="626.7dp"
+        android:layout_height="38.3dp"
+        android:id="@+id/btnRecalculate"
+        android:textColor="@android:color/holo_green_light" />
+    <View
+        android:layout_height="2dip"
+        android:background="#FF909090" />
+<!--Front Nine Hole Labels-->
+    <TableRow>
+        <TextView
+            android:text="Holes: "
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtLabelHoles"
+            android:paddingRight="14dp" />
+        <TextView
+            android:text="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtLabelHole1"
+            android:paddingRight="8dp" />
+        <TextView
+            android:text="2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtLabelHole2"
+            android:paddingRight="8dp" />
+        <TextView
+            android:text="3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtLabelHole3"
+            android:paddingRight="8dp" />
+        <TextView
+            android:text="4"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtLabelHole4"
+            android:paddingRight="8dp" />
+        <TextView
+            android:text="5"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtLabelHole5"
+            android:paddingRight="8dp" />
+        <TextView
+            android:text="6"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtLabelHole6"
+            android:paddingRight="8dp" />
+        <TextView
+            android:text="7"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtLabelHole7"
+            android:paddingRight="8dp" />
+        <TextView
+            android:text="8"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtLabelHole8"
+            android:paddingRight="8dp" />
+        <TextView
+            android:text="9"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtLabelHole9"
+            android:paddingRight="20dp" />
+        <TextView
+            android:text="OUT"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtLabelFirstNine"
+            android:paddingRight="8dp" />
+    </TableRow>
+<!--Front Nine Distances-->
+    <TableRow>
+        <TextView
+            android:text="Distance (ft): "
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtLabelDistance"
+            android:paddingRight="14dp"
+            android:paddingTop="5sp" />
+        <TextView
+            android:text="345"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtDistanceHole1"
+            android:paddingRight="8dp"
+            android:paddingTop="5sp" />
+        <TextView
+            android:text="189"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtDistanceHole2"
+            android:paddingRight="8dp"
+            android:paddingTop="5sp" />
+        <TextView
+            android:text="249"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtDistanceHole3"
+            android:paddingRight="8dp"
+            android:paddingTop="5sp" />
+        <TextView
+            android:text="387"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtDistanceHole4"
+            android:paddingRight="8dp"
+            android:paddingTop="5sp" />
+        <TextView
+            android:text="225"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtDistanceHole5"
+            android:paddingRight="8dp"
+            android:paddingTop="5sp" />
+        <TextView
+            android:text="228"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtDistanceHole6"
+            android:paddingRight="8dp"
+            android:paddingTop="5sp" />
+        <TextView
+            android:text="276"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtDistanceHole7"
+            android:paddingRight="8dp"
+            android:paddingTop="5sp" />
+        <TextView
+            android:text="285"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtDistanceHole8"
+            android:paddingRight="8dp"
+            android:paddingTop="5sp" />
+        <TextView
+            android:text="345"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtDistanceHole9"
+            android:paddingRight="20dp"
+            android:paddingTop="5sp" />
+        <TextView
+            android:text="sumfront"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtDistanceFrontNine"
+            android:paddingRight="8dp"
+            android:paddingTop="5sp" />
+    </TableRow>
+<!-- Front Nine Par-->
+    <TableRow>
+        <TextView
+            android:text="Par: "
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtLabelPar"
+            android:paddingRight="14dp"
+            android:paddingTop="5sp" />
+        <TextView
+            android:text="4"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtParLabelHole1"
+            android:paddingRight="8dp"
+            android:paddingTop="5sp" />
+        <TextView
+            android:text="3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtParLabelHole2"
+            android:paddingRight="8dp"
+            android:paddingTop="5sp" />
+        <TextView
+            android:text="4"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtParLabelHole3"
+            android:paddingRight="8dp"
+            android:paddingTop="5sp" />
+        <TextView
+            android:text="4"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtParLabelHole4"
+            android:paddingRight="8dp"
+            android:paddingTop="5sp" />
+        <TextView
+            android:text="3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtParLabelHole5"
+            android:paddingRight="8dp"
+            android:paddingTop="5sp" />
+        <TextView
+            android:text="3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtParLabelHole6"
+            android:paddingRight="8dp"
+            android:paddingTop="5sp" />
+        <TextView
+            android:text="4"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtParLabelHole7"
+            android:paddingRight="8dp"
+            android:paddingTop="5sp" />
+        <TextView
+            android:text="4"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtParLabelHole8"
+            android:paddingRight="8dp"
+            android:paddingTop="5sp" />
+        <TextView
+            android:text="4"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtParLabelHole9"
+            android:paddingRight="20dp"
+            android:paddingTop="5sp" />
+        <TextView
+            android:text="33"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtParLabelFrontNine"
+            android:paddingRight="8dp"
+            android:paddingTop="5sp" />
+    </TableRow>
+<!--Front Nine Hole Textboxes-->
+    <TableRow>
+        <TextView
+            android:text="Score: "
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtScoreEmptyLabel"
+            android:paddingRight="8dp"
+            android:paddingTop="10sp"
+            android:paddingBottom="10sp" />
+        <EditText
+            android:text="0"
+            android:inputType="number"
+            android:maxLength="1"
+            android:selectAllOnFocus="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtScoreHole1"
+            android:paddingTop="10sp"
+            android:paddingRight="8dp"
+            android:textColor="@android:color/holo_blue_light"
+            android:clickable="true" />
+        <EditText
+            android:text="0"
+            android:inputType="number"
+            android:maxLength="1"
+            android:selectAllOnFocus="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtScoreHole2"
+            android:paddingTop="10sp"
+            android:paddingRight="8dp"
+            android:textColor="@android:color/holo_blue_light"
+            android:clickable="true" />
+        <EditText
+            android:text="0"
+            android:inputType="number"
+            android:maxLength="1"
+            android:selectAllOnFocus="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtScoreHole3"
+            android:paddingTop="10sp"
+            android:paddingRight="8dp"
+            android:textColor="@android:color/holo_blue_light"
+            android:clickable="true" />
+        <EditText
+            android:text="0"
+            android:inputType="number"
+            android:maxLength="1"
+            android:selectAllOnFocus="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtScoreHole4"
+            android:paddingTop="10sp"
+            android:paddingRight="8dp"
+            android:textColor="@android:color/holo_blue_light"
+            android:clickable="true" />
+        <EditText
+            android:text="0"
+            android:inputType="number"
+            android:maxLength="1"
+            android:selectAllOnFocus="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtScoreHole5"
+            android:paddingTop="10sp"
+            android:paddingRight="8dp"
+            android:textColor="@android:color/holo_blue_light"
+            android:clickable="true" />
+        <EditText
+            android:text="0"
+            android:inputType="number"
+            android:maxLength="1"
+            android:selectAllOnFocus="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtScoreHole6"
+            android:paddingTop="10sp"
+            android:paddingRight="8dp"
+            android:textColor="@android:color/holo_blue_light"
+            android:clickable="true" />
+        <EditText
+            android:text="0"
+            android:inputType="number"
+            android:maxLength="1"
+            android:selectAllOnFocus="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/txtScoreHole7"
+            android:paddingTop="10sp"
+            android:paddingRight="8dp"
+            android:textColor="@android:color/holo_blue_light"
+            android:clickable="true" />
+        <EditText
+            android:text="0"
+            android:inputType="number"
+            android:maxLength="1"
+            android:selectAllOnFocus="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtScoreHole8"
+            android:paddingTop="10sp"
+            android:paddingRight="8dp"
+            android:textColor="@android:color/holo_blue_light"
+            android:clickable="true" />
+        <EditText
+            android:text="0"
+            android:inputType="number"
+            android:maxLength="1"
+            android:selectAllOnFocus="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtScoreHole9"
+            android:paddingTop="10sp"
+            android:paddingRight="35dp"
+            android:textColor="@android:color/holo_blue_light"
+            android:clickable="true" />
+        <TextView
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtScoreFrontNine"
+            android:paddingTop="10sp"
+            android:paddingRight="8dp"
+            android:textColor="@android:color/holo_blue_light" />
+    </TableRow>
+<!--Divider Bar
+    <View
+        android:layout_height="2dip"
+        android:background="#FF909090" />-->
+<!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<!--///////////////////////////////////////////////////////////Back Nine//////////////////////////////////////////////////////////////////////////////////////////-->
+<!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<!--Back Nine Hole Labels-->
+    <TableRow>
+        <TextView
+            android:text="Holes: "
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtLabelHoles"
+            android:paddingRight="14dp" />
+        <TextView
+            android:text="10"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtLabelHole10"
+            android:paddingRight="8dp" />
+        <TextView
+            android:text="11"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtLabelHole11"
+            android:paddingRight="8dp" />
+        <TextView
+            android:text="12"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtLabelHole12"
+            android:paddingRight="8dp" />
+        <TextView
+            android:text="13"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtLabelHole13"
+            android:paddingRight="8dp" />
+        <TextView
+            android:text="14"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtLabelHole14"
+            android:paddingRight="8dp" />
+        <TextView
+            android:text="15"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtLabelHole15"
+            android:paddingRight="8dp" />
+        <TextView
+            android:text="16"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtLabelHole16"
+            android:paddingRight="8dp" />
+        <TextView
+            android:text="17"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtLabelHole17"
+            android:paddingRight="8dp" />
+        <TextView
+            android:text="18"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtLabelHole18"
+            android:paddingRight="20dp" />
+        <TextView
+            android:text="IN"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtLabelBackNine"
+            android:paddingRight="8dp" />
+    </TableRow>
+<!--Back Nine Distances-->
+    <TableRow>
+        <TextView
+            android:text="Distance (ft): "
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtLabelDistance"
+            android:paddingRight="14dp"
+            android:paddingTop="5sp" />
+        <TextView
+            android:text="255"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtDistanceHole10"
+            android:paddingRight="8dp"
+            android:paddingTop="5sp" />
+        <TextView
+            android:text="429"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtDistanceHole11"
+            android:paddingRight="8dp"
+            android:paddingTop="5sp" />
+        <TextView
+            android:text="243"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtDistanceHole12"
+            android:paddingRight="8dp"
+            android:paddingTop="5sp" />
+        <TextView
+            android:text="273"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtDistanceHole13"
+            android:paddingRight="8dp"
+            android:paddingTop="5sp" />
+        <TextView
+            android:text="240"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtDistanceHole14"
+            android:paddingRight="8dp"
+            android:paddingTop="5sp" />
+        <TextView
+            android:text="237"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtDistanceHole15"
+            android:paddingRight="8dp"
+            android:paddingTop="5sp" />
+        <TextView
+            android:text="405"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtDistanceHole16"
+            android:paddingRight="8dp"
+            android:paddingTop="5sp" />
+        <TextView
+            android:text="453"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtDistanceHole17"
+            android:paddingRight="8dp"
+            android:paddingTop="5sp" />
+        <TextView
+            android:text="471"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtDistanceHole18"
+            android:paddingRight="20dp"
+            android:paddingTop="5sp" />
+        <TextView
+            android:text="sumback"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtDistanceBackNine"
+            android:paddingRight="8dp"
+            android:paddingTop="5sp" />
+    </TableRow>
+<!--Back Nine Par-->
+    <TableRow>
+        <TextView
+            android:text="Par: "
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtLabelPar"
+            android:paddingRight="14dp"
+            android:paddingTop="5sp" />
+        <TextView
+            android:text="4"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtParLabelHole10"
+            android:paddingRight="8dp"
+            android:paddingTop="5sp" />
+        <TextView
+            android:text="5"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtParLabelHole11"
+            android:paddingRight="8dp"
+            android:paddingTop="5sp" />
+        <TextView
+            android:text="4"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtParLabelHole12"
+            android:paddingRight="8dp"
+            android:paddingTop="5sp" />
+        <TextView
+            android:text="4"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtParLabelHole13"
+            android:paddingRight="8dp"
+            android:paddingTop="5sp" />
+        <TextView
+            android:text="4"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtParLabelHole14"
+            android:paddingRight="8dp"
+            android:paddingTop="5sp" />
+        <TextView
+            android:text="3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtParLabelHole15"
+            android:paddingRight="8dp"
+            android:paddingTop="5sp" />
+        <TextView
+            android:text="5"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtParLabelHole16"
+            android:paddingRight="8dp"
+            android:paddingTop="5sp" />
+        <TextView
+            android:text="5"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtParLabelHole17"
+            android:paddingRight="8dp"
+            android:paddingTop="5sp" />
+        <TextView
+            android:text="5"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtParLabelHole18"
+            android:paddingRight="20dp"
+            android:paddingTop="5sp" />
+        <TextView
+            android:text="39"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtParLabelBackNine"
+            android:paddingRight="8dp"
+            android:paddingTop="5sp" />
+    </TableRow>
+<!--Back Nine Hole Textboxes-->
+    <TableRow>
+        <TextView
+            android:text="Score: "
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtScoreEmptyLabel"
+            android:paddingRight="8dp"
+            android:paddingTop="10sp"
+            android:paddingBottom="10sp" />
+        <EditText
+            android:text="0"
+            android:inputType="number"
+            android:maxLength="1"
+            android:selectAllOnFocus="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtScoreHole10"
+            android:paddingTop="10sp"
+            android:paddingRight="8dp"
+            android:textColor="@android:color/holo_blue_light"
+            android:clickable="true" />
+        <EditText
+            android:text="0"
+            android:inputType="number"
+            android:maxLength="1"
+            android:selectAllOnFocus="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtScoreHole11"
+            android:paddingTop="10sp"
+            android:paddingRight="8dp"
+            android:textColor="@android:color/holo_blue_light"
+            android:clickable="true" />
+        <EditText
+            android:text="0"
+            android:inputType="number"
+            android:maxLength="1"
+            android:selectAllOnFocus="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtScoreHole12"
+            android:paddingTop="10sp"
+            android:paddingRight="8dp"
+            android:textColor="@android:color/holo_blue_light"
+            android:clickable="true" />
+        <EditText
+            android:text="0"
+            android:inputType="number"
+            android:maxLength="1"
+            android:selectAllOnFocus="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtScoreHole13"
+            android:paddingTop="10sp"
+            android:paddingRight="8dp"
+            android:textColor="@android:color/holo_blue_light"
+            android:clickable="true" />
+        <EditText
+            android:text="0"
+            android:inputType="number"
+            android:maxLength="1"
+            android:selectAllOnFocus="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtScoreHole14"
+            android:paddingTop="10sp"
+            android:paddingRight="8dp"
+            android:textColor="@android:color/holo_blue_light"
+            android:clickable="true" />
+        <EditText
+            android:text="0"
+            android:inputType="number"
+            android:maxLength="1"
+            android:selectAllOnFocus="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtScoreHole15"
+            android:paddingTop="10sp"
+            android:paddingRight="8dp"
+            android:textColor="@android:color/holo_blue_light"
+            android:clickable="true" />
+        <EditText
+            android:text="0"
+            android:inputType="number"
+            android:maxLength="1"
+            android:selectAllOnFocus="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtScoreHole16"
+            android:paddingTop="10sp"
+            android:paddingRight="8dp"
+            android:textColor="@android:color/holo_blue_light"
+            android:clickable="true" />
+        <EditText
+            android:text="0"
+            android:inputType="number"
+            android:maxLength="1"
+            android:selectAllOnFocus="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtScoreHole17"
+            android:paddingTop="10sp"
+            android:paddingRight="8dp"
+            android:textColor="@android:color/holo_blue_light"
+            android:clickable="true" />
+        <EditText
+            android:text="0"
+            android:inputType="number"
+            android:maxLength="1"
+            android:selectAllOnFocus="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtScoreHole18"
+            android:paddingTop="10sp"
+            android:paddingRight="35dp"
+            android:textColor="@android:color/holo_blue_light"
+            android:clickable="true" />
+        <TextView
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtScoreBackNine"
+            android:paddingTop="10sp"
+            android:paddingRight="8dp"
+            android:textColor="@android:color/holo_blue_light" />
+    </TableRow>
+<!--<LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minWidth="25px"
+        android:minHeight="25px">
+        <TextView
+            android:text="Medium Text"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/navTabBar"
+            android:gravity="center" />
+    </LinearLayout> -->
+</TableLayout>
