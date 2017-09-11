@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"    
     android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -29,11 +29,11 @@
         android:layout_height="2dip"
         android:background="#FF909090" />
     <Button
-        android:text="Recalculate"
+        android:text="Update Totals"
         android:layout_width="626.7dp"
         android:layout_height="38.3dp"
         android:id="@+id/btnRecalculate"
-        android:textColor="@android:color/holo_green_light" />
+        android:textColor="@android:color/holo_orange_light" />
     <View
         android:layout_height="2dip"
         android:background="#FF909090" />
@@ -104,7 +104,8 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:id="@+id/txtLabelFirstNine"
-            android:paddingRight="8dp" />
+            android:paddingRight="8dp"
+            android:layout_column="12" />
     </TableRow>
 <!--Front Nine Distances-->
     <TableRow>
@@ -184,7 +185,8 @@
             android:layout_height="match_parent"
             android:id="@+id/txtDistanceFrontNine"
             android:paddingRight="8dp"
-            android:paddingTop="5sp" />
+            android:paddingTop="5sp"
+            android:layout_column="12" />
     </TableRow>
 <!-- Front Nine Par-->
     <TableRow>
@@ -264,7 +266,8 @@
             android:layout_height="match_parent"
             android:id="@+id/txtParLabelFrontNine"
             android:paddingRight="8dp"
-            android:paddingTop="5sp" />
+            android:paddingTop="5sp"
+            android:layout_column="12" />
     </TableRow>
 <!--Front Nine Hole Textboxes-->
     <TableRow>
@@ -391,12 +394,17 @@
             android:id="@+id/txtScoreFrontNine"
             android:paddingTop="10sp"
             android:paddingRight="8dp"
+            android:textColor="@android:color/holo_blue_light"
+            android:layout_column="12" />
+        <TextView
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtFrontSTP"
+            android:paddingTop="10sp"
+            android:paddingRight="8dp"
             android:textColor="@android:color/holo_blue_light" />
     </TableRow>
-<!--Divider Bar
-    <View
-        android:layout_height="2dip"
-        android:background="#FF909090" />-->
 <!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
 <!--///////////////////////////////////////////////////////////Back Nine//////////////////////////////////////////////////////////////////////////////////////////-->
 <!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
@@ -467,7 +475,8 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:id="@+id/txtLabelBackNine"
-            android:paddingRight="8dp" />
+            android:paddingRight="8dp"
+            android:layout_column="12" />
     </TableRow>
 <!--Back Nine Distances-->
     <TableRow>
@@ -547,7 +556,8 @@
             android:layout_height="match_parent"
             android:id="@+id/txtDistanceBackNine"
             android:paddingRight="8dp"
-            android:paddingTop="5sp" />
+            android:paddingTop="5sp"
+            android:layout_column="12" />
     </TableRow>
 <!--Back Nine Par-->
     <TableRow>
@@ -627,7 +637,8 @@
             android:layout_height="match_parent"
             android:id="@+id/txtParLabelBackNine"
             android:paddingRight="8dp"
-            android:paddingTop="5sp" />
+            android:paddingTop="5sp"
+            android:layout_column="12" />
     </TableRow>
 <!--Back Nine Hole Textboxes-->
     <TableRow>
@@ -754,6 +765,15 @@
             android:id="@+id/txtScoreBackNine"
             android:paddingTop="10sp"
             android:paddingRight="8dp"
+            android:textColor="@android:color/holo_blue_light"
+            android:layout_column="12" />
+        <TextView
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtBackSTP"
+            android:paddingTop="10sp"
+            android:paddingRight="8dp"
             android:textColor="@android:color/holo_blue_light" />
     </TableRow>
 <!--<LinearLayout
@@ -770,4 +790,23 @@
             android:id="@+id/navTabBar"
             android:gravity="center" />
     </LinearLayout> -->
+    <TableRow>
+        <TextView
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtFinalScore"
+            android:paddingTop="10sp"
+            android:paddingRight="8dp"
+            android:textColor="@android:color/holo_blue_light"
+            android:layout_column="12" />
+        <TextView
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtFinalSTP"
+            android:paddingTop="10sp"
+            android:paddingRight="8dp"
+            android:textColor="@android:color/holo_blue_light" />
+    </TableRow>
 </TableLayout>
