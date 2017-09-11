@@ -1,10 +1,13 @@
 # ObetzDiscGolfScorecard
-This is a basic version, but it works.<br>
+This is version 1.1
 The apk file functions when downloaded to phone on Android.  <br><br>
 
-Next versions include: <br>
+New version includes: <br>
  - including a full total & total to par
  - changing colors depending on above/below par per hole
- - additional player below first player in another color
+
+Next versions to include: <br>
+ - additional player below first player in another color<br>
+ OR<br>
  - tabs for additional players
- - comparisons to other players
+ - comparisons to other players scores
