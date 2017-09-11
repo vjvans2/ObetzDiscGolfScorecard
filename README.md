@@ -7,7 +7,7 @@ New version includes: <br>
  - changing colors depending on above/below par per hole
 
 Next versions to include: <br>
- - additional player below first player in another color
- OR
+ - additional player below first player in another color<br>
+ OR<br>
  - tabs for additional players
  - comparisons to other players scores
