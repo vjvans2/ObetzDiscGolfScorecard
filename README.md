@@ -1,6 +1,7 @@
 # ObetzDiscGolfScorecard
 This is version 1.1
-The apk file functions when downloaded to phone on Android.  <br><br>
+The apk file functions when downloaded to phone on Android.<br>
+Not yet adapted to iOS.  Will do if need rises.<br><br>
 
 New version includes: <br>
  - including a full total & total to par
