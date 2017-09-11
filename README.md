@@ -1,5 +1,5 @@
 # ObetzDiscGolfScorecard
-This is version 1.1
+This is version 1.1. <br>
 The apk file functions when downloaded to phone on Android.<br>
 Not yet adapted to iOS.  Will do if need rises.<br><br>
 
